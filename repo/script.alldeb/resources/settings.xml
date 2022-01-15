@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+	<category label="Paramètres">
+		<setting label="Vous devez avoir un compte premium pour utiliser l'extension" enable="False" type="text"/>
+		<setting label="Allez à cette adresse pour générer une clé API: https://alldebrid.fr/apikeys/" enable="False" type="text"/>
+		<setting label="API Alldebrid" type="text" id="API" default=""/>
+		<setting type="sep"/>
+		<setting label="ATTENTION: " type="text" enable="False"/>
+		<setting label="Dans le dossier selectionné, nous créerons les dossiers série," type="text" enable="False"/>
+		<setting label="film et inconnus (pour les medias non reconnus). " type="text" enable="False"/>
+		<setting label="Ils seront effacés lors de la mise à jour donc sélectionnez un repertoire vide." type="text" enable="False"/>
+		<setting label="Assurez vous d'avoir les droits en écriture sur ce dossier." type="text" enable="False"/>
+		<setting label="Emplacement du repertoire parent" type="lsep"/>
+		<setting id="dossier" enable="True" type="folder" label="Dossier" default="special://userdata/addon_data/script.alldeb/media/"/>
+	</category>
+	<category label="Filtres">
+		<setting label="Vous pouvez ajouter des filtres de remplacement pour les titres" enable="False" type="text"/>
+		<setting label="Modifier cette partie peut amener à un disfonctionnement de l'addon" enable="False" type="text"/>
+		<setting label="Pour en ajouter procedez comme suit:" enable="False" type="text"/>
+		<setting label="<terme a rechercher>:<terme de remplacement>" enable="False" type="text"/>
+		<setting label="Pensez bien aux delimiteurs <>." enable="False" type="text"/>
+		<setting label="Si vous en mettez plusieurs, il faudra les séparer avec ," enable="False" type="text"/>
+		<setting label="" type="text" id="dico" default=""/>
+		<setting label="Voir les filtres déjà entrés" type="action" action="RunScript(special://home/addons/script.alldeb/filtre.py)"/>
+	</category>
+</settings>
