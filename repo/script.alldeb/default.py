@@ -117,7 +117,7 @@ if (APIkey != ''):
 				type_media = "Film"
 				annee = output.group(0)[-5:-1]
 				titre = output.group(0)[0:-5]
-				for key, value in dico_titre.items():
+				for key, value in dico_base.items():
 					#nettoyage du titre avec les filtres
 					titre = titre.replace(key, value)
 				titre = re.sub('(-{2,})|(\.{1,}[^ ]??)',' ',titre).strip()
