@@ -17,7 +17,7 @@
             <fanart>fanart.jpg</fanart>
         </assets>
     </extension>
-</addon><addon id="script.alldeb" name="Import All debrid" version="0.0.1" provider-name="breizhou13">
+</addon><addon id="script.alldeb" name="Import All debrid" version="0.0.2" provider-name="breizhou13">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.simplejson" version="3.3.0" />
